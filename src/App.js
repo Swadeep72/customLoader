@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import { Loader } from "./components/Loader/Loader"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const App = () => (
+  <>
+    <Loader height="50px" width="50px" bgColor="black" loaderColor="red" transitionColour={{ loader: "white", background: "orange" }}><div /></Loader>
+    <Loader height="100px" width="100px" bgColor="orange" loaderColor="white" transitionColour={{ loader: "red", background: "black" }}><div /></Loader>
+  </>
+);
 export default App;
