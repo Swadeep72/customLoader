@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/customLoader/static/js/main.a9895c24.js",
+    "main.js": "/customLoader/static/js/main.ea7fc5cc.js",
     "index.html": "/customLoader/index.html",
-    "main.a9895c24.js.map": "/customLoader/static/js/main.a9895c24.js.map"
+    "main.ea7fc5cc.js.map": "/customLoader/static/js/main.ea7fc5cc.js.map"
   },
   "entrypoints": [
-    "static/js/main.a9895c24.js"
+    "static/js/main.ea7fc5cc.js"
   ]
 }
