@@ -16,15 +16,27 @@ export const Loader = styled.div`
     border-color: ${props => props.loaderColor || "red"} ${props => props.bgColor || "white"} ${props => props.bgColor || "white"} ${props => props.bgColor || "white"};
     animation: spin 1s ease-in-out infinite;
     @keyframes spin {
-      0% {opacity: 1; transform: rotate(0deg);scale:1; }
-      50% {opacity: 1;
-      border-radius:0%;
-         border: 3.3px solid;transform: rotate(180deg);scale:1.5; border-color: ${props => props?.transitionColour?.loader || props?.loaderColor} ${props => props?.transitionColour?.background || props?.bgColor} ${props => props?.transitionColour?.background || props?.bgColor} ${props => props?.transitionColour?.background || props?.bgColor};}
-      100% {opacity: 1; 
-      border-radius:50%;
-        transform: rotate(360deg); scale:1;}
+        0% {
+        opacity: 1; 
+        transform: rotate(0deg);
+        scale:1; 
+        }
+        50% {
+        opacity: 1;
+        border-radius:0%;
+        border: 3.3px solid;
+        transform: rotate(180deg);
+        scale:1.5; 
+        border-color: ${props => props?.transitionColour?.loader || props?.loaderColor} ${props => props?.transitionColour?.background || props?.bgColor} ${props => props?.transitionColour?.background || props?.bgColor} ${props => props?.transitionColour?.background || props?.bgColor};
+        }
+        100% {
+        opacity: 1; 
+        border-radius:50%;
+        transform: rotate(360deg); 
+        scale:1;
+        }
+      }
     }
-}
 `
 
 // Way to use the component
